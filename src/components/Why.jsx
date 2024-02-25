@@ -8,7 +8,7 @@ import { MdHandshake, MdKey, MdTrendingUp } from "react-icons/md";
 
 const Why = () => {
   return (
-    <section className="section flex items-center" id="why">
+    <section className="section flex items-center p-[15px]" id="why">
       <div className="container mx-auto">
         <motion.h2
           variants={fadeIn("down", 0.2)}
@@ -20,7 +20,7 @@ const Why = () => {
           Unmatched excellence and customer satisfaction
         </motion.h2>
         <motion.p
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.6 }}
@@ -31,16 +31,16 @@ const Why = () => {
           expectations in every interaction
         </motion.p>
         <motion.div
-          variants={fadeIn("up", 0.6)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="hidden md:flex justify-center mb-6 xl:mb-2 "
         >
           <Image src={"/images/why/car.svg"} width={1060} height={420} alt="" />
         </motion.div>
         <motion.div
-          variants={fadeIn("up", 0.8)}
+          variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.4 }}

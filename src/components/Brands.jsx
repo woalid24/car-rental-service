@@ -7,9 +7,9 @@ import { fadeIn } from "/variants";
 
 const Brands = () => {
   return (
-    <section className="xl:pt-16 xl:h-[200px] bg-white flrx flex-col justify-center">
+    <section className="xl:pt-16 xl:h-[200px] bg-white flrx flex-col justify-center ">
       <motion.div
-        variants={fadeIn("up", 0.4)}
+        variants={fadeIn("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.6 }}

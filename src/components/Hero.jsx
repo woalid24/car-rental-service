@@ -25,7 +25,7 @@ const Hero = () => {
               Explore the Finest <span className="text-accent-DEFFAULT"> Global</span> Offers
             </motion.h1>
             <motion.p
-              variants={fadeIn("down", 0.4)}
+              variants={fadeIn("down", 0.1)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
@@ -34,11 +34,11 @@ const Hero = () => {
               Find your ideal ride for any adventure with our divers range of affordable and dependable car rentals.
             </motion.p>
             <motion.div
-              variants={fadeIn("down", 0.4)}
+              variants={fadeIn("down", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.8 }}
-              className="flex gap-x-3 justify-center xl:justify-start"
+              className="flex gap-x-3 justify-center xl:justify-start pt-2"
             >
               <button className="btn-cta">
                 <Image src={"/icons/buttons/app-store.svg"} width={132} height={35}  />
@@ -49,7 +49,7 @@ const Hero = () => {
             </motion.div>
           </div>
           <motion.div
-            variants={fadeIn("up", 0.6)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}
@@ -70,7 +70,7 @@ const Hero = () => {
         </motion.div>
       ) : (
         <motion.div
-          variants={fadeIn("up", 0.8)}
+          variants={fadeIn("up", 0.1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.2 }}

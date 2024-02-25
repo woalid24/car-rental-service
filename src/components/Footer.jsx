@@ -8,16 +8,12 @@ import { fadeIn } from "../../variants";
 import { Link } from "react-scroll";
 import Image from "next/image";
 
-
-
-
 const Footer = () => {
-    
   return (
-    <div className="pt-20 bg-white z-20 xl:pl-[235px] pl-[75px]">
+    <div className="pt-20 bg-white z-20 xl:pl-[235px] pl-[75px] p-[15px]">
       <div className="container">
         <motion.div
-          variants={fadeIn("up", 0.2)}
+          variants={fadeIn("up", 0.1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.6 }}
@@ -71,18 +67,18 @@ const Footer = () => {
           <div className="flex-1">
             <h3 className="h3 mb-8 font-bold">Working Hours</h3>
             <div className="flex flex-col gap-y-4">
-                <div className="flex gap-x-2">
-                    <div className="text-secondary">Mon-Fri:</div>
-                    <div className="text-semibold">09:00AM - 09:00PM</div>
-                </div>
-                <div className="flex gap-x-2">
-                    <div className="text-secondary">Sat:</div>
-                    <div className="text-semibold">09:00AM - 07:00PM</div>
-                </div>
-                <div className="flex gap-x-2">
-                    <div className="text-secondary">Sun</div>
-                    <div className="text-semibold">Closed</div>
-                </div>
+              <div className="flex gap-x-2">
+                <div className="text-secondary">Mon-Fri:</div>
+                <div className="text-semibold">09:00AM - 09:00PM</div>
+              </div>
+              <div className="flex gap-x-2">
+                <div className="text-secondary">Sat:</div>
+                <div className="text-semibold">09:00AM - 07:00PM</div>
+              </div>
+              <div className="flex gap-x-2">
+                <div className="text-secondary">Sun</div>
+                <div className="text-semibold">Closed</div>
+              </div>
             </div>
           </div>
           <div>1</div>

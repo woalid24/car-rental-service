@@ -8,13 +8,13 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <section className="pt-24 xl:pt-48 flex items-end pb-0 " id="contact">
+    <section className="pt-24 xl:pt-48 flex items-end pb-0 p-[15px]" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center">
           <div className="flex-1 xl:ml-24 text-center md:text-left mb-12 md:mb-0">
             <div className="max-w-[520px] mx-auto order-2 xl:order-none">
               <motion.h2
-                variants={fadeIn("right", 0.6)}
+                variants={fadeIn("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.2 }}
@@ -23,7 +23,7 @@ const Contact = () => {
                 Download our App now and hit the road with ease
               </motion.h2>
               <motion.p
-                variants={fadeIn("right", 0.6)}
+                variants={fadeIn("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.2 }}
@@ -34,7 +34,7 @@ const Contact = () => {
                 dolores deleniti, velit libero consectetur harum.
               </motion.p>
               <motion.div
-                variants={fadeIn("up", 0.6)}
+                variants={fadeIn("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.6 }}
@@ -62,7 +62,7 @@ const Contact = () => {
             </div>
           </div>
           <motion.div
-            variants={fadeIn("up", 0.6)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.2 }}

@@ -10,12 +10,9 @@ import { BiX, BiMenuAltRight } from "react-icons/bi";
 import { SearchContext } from "@/app/context/search";
 
 const Header = () => {
-  const {setSearchActive} = useContext(SearchContext)
+  const { setSearchActive } = useContext(SearchContext);
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
-
-
-
 
   const desktopMode = useMediaQuery({
     query: "(min-width: 1300px)",
@@ -29,9 +26,9 @@ const Header = () => {
         setHeader(false);
       }
       //search
-      if(window.scrollY>800){
+      if (window.scrollY > 800) {
         setSearchActive(true);
-      }else{
+      } else {
         setSearchActive(false);
       }
     };
@@ -43,8 +40,6 @@ const Header = () => {
       window.removeEventListener("scroll", handelScroll);
     };
   }, []);
-
-
 
   return (
     <header
@@ -65,28 +60,71 @@ const Header = () => {
             }}
             className="cursor-pointer xl:hidden "
           >
-            {nav ? <BiX className="text-4xl" /> : <BiMenuAltRight className="text-4xl " />}
+            {nav ? (
+              <BiX className="text-4xl" />
+            ) : (
+              <BiMenuAltRight className="text-4xl " />
+            )}
           </div>
         </div>
         <nav
-          className={`${nav? 'max-h-max py-8 px-4 xl:py-0 xl:px-0' : 'max-h-0 xl:max-h-max'} flex flex-col  bg-white gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl-w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}
+          className={`${
+            nav ? "max-h-max py-8 px-4 xl:py-0 xl:px-0" : "max-h-0 xl:max-h-max"
+          } flex flex-col  bg-white gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl-w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}
         >
-          <Link className="cursor-pointer" to="home" smooth={desktopMode} spy={true} activeClass="active">
+          <Link
+            className="cursor-pointer"
+            to="home"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
+          >
             Home
           </Link>
-          <Link className="cursor-pointer " to="cars" smooth={desktopMode} spy={true} activeClass="active">
+          <Link
+            className="cursor-pointer "
+            to="cars"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
+          >
             cars
           </Link>
-          <Link className="cursor-pointer" to="about" smooth={desktopMode} spy={true} activeClass="active" offset={-100}>
+          <Link
+            className="cursor-pointer"
+            to="about"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
+            offset={-100}
+          >
             About
           </Link>
-          <Link className="cursor-pointer" to="why" smooth={desktopMode} spy={true} activeClass="active">
+          <Link
+            className="cursor-pointer"
+            to="why"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
+          >
             Why us
           </Link>
-          <Link className="cursor-pointer" to="testimonial" smooth={desktopMode} spy={true} activeClass="active">
+          <Link
+            className="cursor-pointer"
+            to="testimonial"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
+          >
             Testimonial
           </Link>
-          <Link className="cursor-pointer" to="contact" smooth={desktopMode} spy={true} activeClass="active">
+          <Link
+            className="cursor-pointer"
+            to="contact"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
+          >
             Contact
           </Link>
           <Link
@@ -98,8 +136,14 @@ const Header = () => {
           >
             See all cars
           </Link>
-          <Link className="cursor-pointer" to="searchmobile" smooth={desktopMode} spy={true} activeClass="active">
-            <SearchMobile/>
+          <Link
+            className="cursor-pointer"
+            to="searchmobile"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
+          >
+            <SearchMobile />
           </Link>
         </nav>
       </div>

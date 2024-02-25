@@ -17,7 +17,7 @@ const About = () => {
     threshold: 0.5,
   });
   return (
-    <section className=" seaction flex items-center" id="about" ref={ref}>
+    <section className=" seaction flex items-center p-[15px]" id="about" ref={ref}>
       <div className="container mx-auto ">
         <div className="flex flex-col xl:flex-row xl:justify-center">
           <motion.div
@@ -38,7 +38,7 @@ const About = () => {
           <div className="flex-1 flex xl:justify-center items-center ">
             <div className="xl:max-w-[517px]">
               <motion.h2
-                variants={fadeIn("up", 0.4)}
+                variants={fadeIn("up", 0.1)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.6 }}
@@ -47,7 +47,7 @@ const About = () => {
                 Car services simplified.
               </motion.h2>
               <motion.p
-                variants={fadeIn("up", 0.4)}
+                variants={fadeIn("up", 0.1)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.6 }}
@@ -57,7 +57,7 @@ const About = () => {
                 types, and relaible repair points ensure a seamless car experience.
               </motion.p>
               <motion.div
-                variants={fadeIn("up", 0.8)}
+                variants={fadeIn("up", 0.1)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.2 }}
@@ -97,7 +97,7 @@ const About = () => {
                 </div>
               </motion.div>
               <motion.button
-                variants={fadeIn("up", 0.8)}
+                variants={fadeIn("up", 0.1)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.2 }}
